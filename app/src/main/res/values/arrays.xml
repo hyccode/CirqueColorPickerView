@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CirqueColorPickerView">
+        <attr name="round_color" format="dimension" />
+        <attr name="round_width" format="dimension" />
+        <attr name="out_round_color" format="dimension" />
+        <attr name="text_color" format="dimension" />
+        <attr name="text_size" format="dimension" />
+        <attr name="max" format="dimension" />
+        <attr name="line_color" format="dimension" />
+        <attr name="line_width" format="dimension" />
+    </declare-styleable>
+
+</resources>
