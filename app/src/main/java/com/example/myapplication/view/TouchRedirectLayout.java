@@ -12,6 +12,7 @@ import android.widget.FrameLayout;
 public class TouchRedirectLayout extends FrameLayout {
 
     private CirqueColorPickerView targetView;
+    // 记录是否正在动画
     private boolean isAnimating = false;
     // 记录是否可以拖动了
     private boolean downOnArc = false;
@@ -60,6 +61,8 @@ public class TouchRedirectLayout extends FrameLayout {
 //                }
                     return true;
                 }else{
+                    // 短按事件
+                    performClick(); // 触发 onClick 事件
                     return false;
                 }
             case MotionEvent.ACTION_CANCEL:
@@ -148,5 +151,9 @@ public class TouchRedirectLayout extends FrameLayout {
     }
 
 
-
+    @Override
+    public boolean performClick() {
+        // 执行点击操作
+        return super.performClick();
+    }
 }

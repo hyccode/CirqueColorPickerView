@@ -62,7 +62,7 @@ public class FirstFragment extends Fragment {
         binding.touchRedirectLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "点击了", Toast.LENGTH_SHORT);
+                Toast.makeText(getContext(), "点击了", Toast.LENGTH_SHORT).show();
             }
         });
 
